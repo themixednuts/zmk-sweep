@@ -54,13 +54,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ HOME     │ PAGE UP  │  PAGE DN │  END     │ INSERT   │   │          │ 7        │ 8        │ 9        │          │
-            &kp HOME  &kp PAGE_UP &kp PG_DN  &kp END    &kp INS        &trans     &kp N7     &kp N8     &kp N9     &trans
+            &kp HOME  &kp PAGE_UP &kp PG_DN  &kp END    &kp INS        &none     &kp N7     &kp N8     &kp N9     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LEFT     │  UP      │  DOWN    │  RIGHT   │ DELETE   │   │          │ 4        │ 5        │ 6        │  :       │
-            &kp LARW   &kp UARW   &kp DARW   &kp RARW   &kp DEL        &trans     &kp N4     &kp N5     &kp N6     &kp COLON
+            &kp LARW   &kp UARW   &kp DARW   &kp RARW   &kp DEL        &none     &kp N4     &kp N5     &kp N6     &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │ 0        │ 1        │ 2        │ 3        │  ;       │
-           &caps_word  &trans     &trans     &trans    &trans          &kp N0     &kp N1     &kp N2     &kp N3     &kp SEMI
+           &caps_word  &trans     &trans     &trans    &kp PRINTSCREEN &kp N0     &kp N1     &kp N2     &kp N3     &kp SEMI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
