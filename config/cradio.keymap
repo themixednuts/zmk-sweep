@@ -62,7 +62,7 @@
         //│ CAPS     │          │          │          │          │   │ 0        │ 1        │ 2        │ 3        │  ;       │
            &caps_word  &trans     &trans     &trans    &kp PRINTSCREEN &kp N0     &kp N1     &kp N2     &kp N3     &kp SEMI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -79,7 +79,7 @@
         //│          │          │          │  ~       │  `       │   │  )       │  !       │  @       │  #       │  \       │
             &trans     &trans     &trans     &kp TILDE  &kp GRAVE      &kp RPAR   &kp EXCL  &kp AT      &kp HASH   &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &kp ESC         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
