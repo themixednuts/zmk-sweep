@@ -16,8 +16,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <50>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -71,13 +71,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │  [       │  ]       │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LBKT   &kp RBKT   &trans         &none      &kp HOME   &kp UARW   &kp PG_UP  &kp F12
+            &trans     &trans     &kp LBKT   &kp RBKT   &trans         &none      &kp HOME   &kp UARW   &kp PG_UP  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │  {       │  }       │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LBRC   &kp RBRC   &trans         &none      &kp LARW   &kp DARW   &kp RARW   &kp F11
+            &trans     &trans     &kp LBRC   &kp RBRC   &trans         &none      &kp LARW   &kp DARW   &kp RARW   &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &none      &kp END    &none      &kp PG_DN  &kp F10
+            &trans     &trans     &trans     &trans     &trans         &none      &kp END    &none      &kp PG_DN  &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
