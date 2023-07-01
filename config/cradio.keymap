@@ -15,21 +15,21 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <220>;
-            quick-tap-ms = <50>;
+            quick-tap-ms = <100>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    //conditional_layers {
+      //  compatible = "zmk,conditional-layers";
+       // tri_layer {
+         //   if-layers = <1 2>;
+           // then-layer = <3>;
+       // };
+   // };
 
     keymap {
         compatible = "zmk,keymap";
