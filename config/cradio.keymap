@@ -74,12 +74,12 @@
             &trans     &trans     &kp LBKT   &kp RBKT   &trans         &none      &kp HOME   &kp UARW   &kp PG_UP  &kp F12
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │  {       │  }       │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LBRC   &RBRC      &trans         &none      &kp LARW   &kp DARW   &kp RARW   &kp F11
+            &trans     &trans     &kp LBRC   &kp RBRC   &trans         &none      &kp LARW   &kp DARW   &kp RARW   &kp F11
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans      &trans        &none      &kp END    &none      &kp PG_DN  &kp F10
+            &trans     &trans     &trans     &trans     &trans         &none      &kp END    &none      &kp PG_DN  &kp F10
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC         &trans     &trans
+                                             &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
