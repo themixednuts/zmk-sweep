@@ -20,14 +20,14 @@
             quick-tap-ms = <75>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-        },
+        }
         kp: key_press {
             label = "key_press";
             compatible = "zmk,behavior-key-press";
             quick-tap-ms = <75>;
             global-quick-tap;
             #binding-cells = <1>;
-        },
+        }
         lt: layer_tap {
             label = "layer_tap";
             compatible = "zmk,behavior-layer-tap";
