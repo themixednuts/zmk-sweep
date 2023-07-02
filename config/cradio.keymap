@@ -17,7 +17,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            quick-tap-ms = <25>;
+            quick-tap-ms = <75>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -71,13 +71,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │  [       │  ]       │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LBKT   &kp RBKT   &trans         &none      &kp HOME   &kp UARW   &kp PG_UP  &none
+            &trans     &trans     &kp LBKT   &kp RBKT   &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │  {       │  }       │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LBRC   &kp RBRC   &trans         &none      &kp LARW   &kp DARW   &kp RARW   &none
+            &trans     &trans     &kp LBRC   &kp RBRC   &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &none      &kp END    &none      &kp PG_DN  &none
+            &trans     &trans     &trans     &trans     &trans         &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
