@@ -21,6 +21,18 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+        kp: key_press {
+            label = "key_press";
+            compatible = "zmk,behavior-key-press";
+            quick-tap-ms = <75>;
+            global-quick-tap;
+        };
+        lt: layer_tap {
+            label = "layer_tap";
+            compatible = "zmk,behavior-layer-tap";
+            quick-tap-ms = <75>;
+            global-quick-tap;
+        };
     };
 
     //conditional_layers {
