@@ -8,9 +8,12 @@
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHIFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHIFT k4
+#define LS &ht LSHIFT A
+#define RS &ht RSHIFT ;
 #define BASE 0
 #define NUM  1
 #define SYM  2
+
 
 / {
     behaviors {
@@ -31,7 +34,12 @@
         combo_func {
             timeout-ms = <50>;
             key-positions = <31 34>;
-            bindings = <&kp 3>;
+            bindings = <&mo 3>;
+        };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp ESC>;
         };
     }; 
 
@@ -52,7 +60,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
-            &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
+            &LS        &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &RS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
@@ -86,12 +94,12 @@
             &trans     &trans      &trans     &trans    &kp LBKT       &kp RBKT   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │  {       │   │  }       │          │          │          │          │
-            &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp LBRC       &kp RBRC   &kp RGUI   &kp RCTRL  &kp RALT   &kp RSHIFT
+            &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp LBRC       &kp RBRC   &kp LARW   &kp DARW   &kp UARW   &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans   
+            &trans     &trans     &trans     &trans     &trans         &trans     &kp RGUI   &kp RCTRL  &kp RALT   &kp RSHIFT   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -106,7 +114,22 @@
            &bootloader &trans     &trans     &trans    &bt BT_SEL 1    &kp F11    &kp F4     &kp F5     &kp F6    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &kp F10    &kp F1     &kp F2     &kp F3    &trans
+            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &kp F10    &kp F1     &kp F2     &kp F3    &trans        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &trans     &trans         &trans     &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+        nav_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans    &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
