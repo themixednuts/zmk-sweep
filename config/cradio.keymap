@@ -26,14 +26,14 @@
             quick-tap-ms = <75>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-        };
+        },
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <75>;
             bindings = <&kp SPACE>, <&kp 1>
-        };
+        },
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
