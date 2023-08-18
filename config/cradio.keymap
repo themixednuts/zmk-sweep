@@ -13,6 +13,7 @@
 #define BASE 0
 #define NUM  1
 #define SYM  2
+#define GAME 3
 
 
 / {
@@ -91,7 +92,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │  [       │   │  ]       │          │          │          │          │
-            &trans     &trans      &trans     &trans    &kp LBKT       &kp RBKT   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+            &kp GAME   &trans      &trans     &trans    &kp LBKT       &kp RBKT   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LARW   &kp UARW   &kp DARW   &kp RARW   &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &trans
