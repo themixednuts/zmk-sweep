@@ -92,7 +92,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │  [       │   │  ]       │          │          │          │          │
-            &kp GAME   &trans      &trans     &trans    &kp LBKT       &kp RBKT   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+            &to GAME   &trans      &trans     &trans    &kp LBKT       &kp RBKT   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LARW   &kp UARW   &kp DARW   &kp RARW   &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &trans
@@ -133,7 +133,7 @@
         //│  LCTRL   │  Z       │  X       │  C       │  V       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp V          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp BASE   &kp SPACE      &kp ENTER  &sl SYM
+                                             &to BASE   &kp SPACE      &kp ENTER  &sl SYM
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };     
