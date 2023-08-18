@@ -91,14 +91,14 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │  [       │   │  ]       │          │          │          │          │
-            &to GAME   &trans      &trans     &trans    &kp LBKT       &kp RBKT   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+        //│          │          │          │  [       │  ]       │   │          │          │          │          │          │
+            &to GAME   &trans     &trans     &kp LBKT   &kp RBKT       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LARW   &kp UARW   &kp DARW   &kp RARW   &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │  {       │   │  }       │          │          │          │          │
-            &trans     &trans     &trans     &trans     &kp LBRC       &kp RBRC   &kp RGUI   &kp RCTRL  &kp RALT   &kp RSHIFT   
+        //│          │          │          │ {        │  }       │   │          │          │          │          │          │
+            &trans     &trans     &trans     &kp LBRC    &kp RBRC      &trans     &sk RGUI   &sk RCTRL  &sk RALT   &sk RSHIFT   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &kp BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
