@@ -33,7 +33,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <75>;
             bindings = <&kp SPACE>, <&kp 1>
-        },
+        };,
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
