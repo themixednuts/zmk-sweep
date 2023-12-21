@@ -44,6 +44,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp BSPC>;
+        };
+        combo_delete {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp DELETE>;
+        };
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -78,7 +97,7 @@
             &kp HOME  &kp PAGE_UP &kp PG_DN  &kp END    &kp INS        &kp MINUS  &kp N7     &kp N8     &kp N9     &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LGUI     │  LALT    │  LCTRL   │  LSHIFT  │ TAB      │   │  = +     │ 4        │ 5        │ 6        │  ' "     │
-            &sk LGUI   &sk LALT  &sk LCTRL   &sk LSHIFT &kp TAB        &kp EQUAL  &kp N4     &kp N5     &kp N6     &kp SQT
+            &sk LGUI   &sk LALT   &sk LCTRL  &sk LSHIFT &kp TAB        &kp EQUAL  &kp N4     &kp N5     &kp N6     &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │  ` ~     │ 1        │ 2        │ 3        │  .       │
            &caps_word  &trans     &trans     &trans    &kp PRINTSCREEN &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp DOT
@@ -92,15 +111,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │ [        │  ]       │          │   │          │          │          │          │          │
-            &to GAME   &trans     &kp LBKT   &kp RBKT   &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC
+            &to GAME   &trans     &kp LBKT   &kp RBKT   &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │ {        │  }       │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LBRC   &kp RBRC   &trans         &trans     &sk RSHIFT &sk RCTRL  &sk RALT  &sk RGUI
+            &trans     &trans     &kp LBRC   &kp RBRC   &trans         &trans     &sk RSHIFT &sk RCTRL  &sk RALT   &sk RGUI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp DELETE   
+            &trans     &trans     &trans     &trans     &trans         &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW   
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &kp BSPC
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
