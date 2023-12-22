@@ -47,17 +47,17 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
         combo_bspc {
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
         };
         combo_delete {
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             key-positions = <28 29>;
             bindings = <&kp DELETE>;
         };
@@ -111,13 +111,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │ [        │  ]       │          │   │          │          │          │          │          │
-            &to GAME   &trans     &kp LBKT   &kp RBKT   &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+            &to GAME   &trans     &kp LBKT   &kp RBKT   &trans         &kp HOME   &kp PG_UP  &kp PG_DN  &kp END    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │ {        │  }       │          │   │          │          │          │          │          │
             &trans     &trans     &kp LBRC   &kp RBRC   &trans         &trans     &sk RSHIFT &sk RCTRL  &sk RALT   &sk RGUI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &kp LARW   &kp UARW   &kp DARW   &kp RARW   
+            &trans     &trans     &trans     &trans     &trans         &kp LARW   &kp UARW   &kp DARW   &kp RARW   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
