@@ -47,17 +47,17 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <10>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
         combo_bspc {
-            timeout-ms = <50>;
+            timeout-ms = <10>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
         };
         combo_delete {
-            timeout-ms = <50>;
+            timeout-ms = <10>;
             key-positions = <28 29>;
             bindings = <&kp DELETE>;
         };
@@ -85,7 +85,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &sl NUM   &kp SPACE      &kp ENTER   &sl SYM
+                                             &kp SPACE  &sl NUM        &sl SYM    &kp ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };   
@@ -102,7 +102,7 @@
         //│ CAPS     │          │          │          │          │   │  ` ~     │ 1        │ 2        │ 3        │  .       │
            &caps_word  &trans     &trans     &trans    &kp PRINTSCREEN &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp TAB    &trans         &kp N0     &trans
+                                             &trans     &trans         &kp N0     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
