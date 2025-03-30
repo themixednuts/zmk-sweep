@@ -40,7 +40,6 @@
             compatible = "zmk,behavior-key-repeat";
             label = "KEY_REPEAT";
             #binding-cells = <0>;
-            keys = <&trans>;
         };
     };
 
