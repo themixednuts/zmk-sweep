@@ -36,10 +36,6 @@
             tapping-term-ms = <100>;
             bindings = <&kp ENTER>, <&kp ENTER>;
         };
-        key_repeat: key_repeat {
-            compatible = "zmk,behavior-key-repeat";
-            #binding-cells = <0>;
-        };
     };
 
     combos {
