@@ -132,12 +132,12 @@
         combo_meh_l {
             timeout-ms = <50>;
             key-positions = <10 20 12>;
-            bindings = <&sk MEH>;
+            bindings = <&sk LS(LC(LALT))>;
         };
         combo_hyper_l {
             timeout-ms = <50>;
             key-positions = <10 20 12 11>;
-            bindings = <&sk HYPER>;
+            bindings = <&sk LS(LC(LA(LGUI)))>;
         };
         
         // Modified modifiers - right side
@@ -159,12 +159,12 @@
         combo_meh_r {
             timeout-ms = <50>;
             key-positions = <19 27 17>;
-            bindings = <&sk MEH>;
+            bindings = <&sk RS(RC(RALT))>;
         };
         combo_hyper_r {
             timeout-ms = <50>;
             key-positions = <19 27 17 18>;
-            bindings = <&sk HYPER>;
+            bindings = <&sk RS(RC(RA(RGUI)))>;
         };
         
         // Programming shortcuts
