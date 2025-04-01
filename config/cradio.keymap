@@ -61,135 +61,135 @@
             bindings = <&kp TAB>;
         };
         
-        // Shift keys
+        // Shift keys (moved to home row)
         combo_lshift {
             timeout-ms = <30>;
-            key-positions = <20 21>;
+            key-positions = <10 11>;
             bindings = <&sk LSHIFT>;
         };
         combo_rshift {
             timeout-ms = <30>;
-            key-positions = <28 29>;
+            key-positions = <18 19>;
             bindings = <&sk RSHIFT>;
         };
         
-        // Individual modifiers - left hand
+        // Individual modifiers - left hand (moved to bottom row)
         combo_lctrl {
             timeout-ms = <30>;
-            key-positions = <10 11>;
+            key-positions = <20 21>;
             bindings = <&sk LCTRL>;
         };
         combo_lalt {
             timeout-ms = <30>;
-            key-positions = <12 13>;
+            key-positions = <21 22>;
             bindings = <&sk LALT>;
         };
         combo_lgui {
             timeout-ms = <30>;
-            key-positions = <11 12>;
+            key-positions = <22 23>;
             bindings = <&sk LGUI>;
         };
         
-        // Individual modifiers - right hand
+        // Individual modifiers - right hand (moved to bottom row)
         combo_rctrl {
             timeout-ms = <30>;
-            key-positions = <18 19>;
+            key-positions = <27 28>;
             bindings = <&sk RCTRL>;
         };
         combo_ralt {
             timeout-ms = <30>;
-            key-positions = <16 17>;
+            key-positions = <26 27>;
             bindings = <&sk RALT>;
         };
         combo_rgui {
             timeout-ms = <30>;
-            key-positions = <17 18>;
+            key-positions = <25 26>;
             bindings = <&sk RGUI>;
         };
         
         // Modified modifiers - left side
         combo_ctrl_alt_l {
             timeout-ms = <50>;
-            key-positions = <10 11 12 13>;
+            key-positions = <20 21 22>;
             bindings = <&sk LC(LALT)>;
         };
         combo_ctrl_gui_l {
             timeout-ms = <50>;
-            key-positions = <10 11 12>;
+            key-positions = <20 21 23>;
             bindings = <&sk LC(LGUI)>;
         };
         combo_alt_gui_l {
             timeout-ms = <50>;
-            key-positions = <11 12 13>;
+            key-positions = <21 22 23>;
             bindings = <&sk LA(LGUI)>;
         };
         combo_meh_l {
             timeout-ms = <50>;
-            key-positions = <10 20 12>;
+            key-positions = <20 21 22 10>;
             bindings = <&sk LS(LC(LALT))>;
         };
         combo_hyper_l {
             timeout-ms = <50>;
-            key-positions = <10 20 12 11>;
+            key-positions = <20 21 22 23 10>;
             bindings = <&sk LS(LC(LA(LGUI)))>;
         };
         
         // Modified modifiers - right side
         combo_ctrl_alt_r {
             timeout-ms = <50>;
-            key-positions = <16 17 18 19>;
+            key-positions = <26 27 28>;
             bindings = <&sk RC(RALT)>;
         };
         combo_ctrl_gui_r {
             timeout-ms = <50>;
-            key-positions = <17 18 19>;
+            key-positions = <25 27 28>;
             bindings = <&sk RC(RGUI)>;
         };
         combo_alt_gui_r {
             timeout-ms = <50>;
-            key-positions = <16 17 18>;
+            key-positions = <25 26 27>;
             bindings = <&sk RA(RGUI)>;
         };
         combo_meh_r {
             timeout-ms = <50>;
-            key-positions = <19 27 17>;
+            key-positions = <26 27 28 19>;
             bindings = <&sk RS(RC(RALT))>;
         };
         combo_hyper_r {
             timeout-ms = <50>;
-            key-positions = <19 27 17 18>;
+            key-positions = <25 26 27 28 19>;
             bindings = <&sk RS(RC(RA(RGUI)))>;
         };
         
-        // Programming shortcuts
+        // Programming shortcuts (moved to home row)
         combo_copy {
             timeout-ms = <30>;
-            key-positions = <20 22>;
+            key-positions = <12 13>;
             bindings = <&kp LC(C)>;
         };
         combo_paste {
             timeout-ms = <30>;
-            key-positions = <21 22>;
+            key-positions = <13 14>;
             bindings = <&kp LC(V)>;
         };
         combo_cut {
             timeout-ms = <30>;
-            key-positions = <20 21 22>;
+            key-positions = <12 14>;
             bindings = <&kp LC(X)>;
         };
         combo_undo {
             timeout-ms = <30>;
-            key-positions = <13 14>;
+            key-positions = <10 11>;
             bindings = <&kp LC(Z)>;
         };
         combo_save {
             timeout-ms = <30>;
-            key-positions = <12 14>;
+            key-positions = <11 13>;
             bindings = <&kp LC(S)>;
         };
         combo_find {
             timeout-ms = <30>;
-            key-positions = <11 13>;
+            key-positions = <10 13>;
             bindings = <&kp LC(F)>;
         };
     };
@@ -244,8 +244,8 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  |       │  \       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp PIPE   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ~       │  -       │  (       │  {       │  [       │   │  ]       │  }       │  )       │  +       │  =       │
-            &kp TILDE  &kp MINUS  &kp LPAR   &kp LBRC   &kp LBKT       &kp RBKT   &kp RBRC   &kp RPAR   &kp PLUS   &kp EQUAL
+        //│  ~       │  (       │  {       │  [       │  -       │   │  +       │  ]       │  }       │  )       │  =       │
+            &kp TILDE  &kp LPAR   &kp LBRC   &kp LBKT   &kp MINUS      &kp PLUS   &kp RBKT   &kp RBRC   &kp RPAR   &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  `       │  _       │  '       │  HOME    │  END     │   │  LEFT    │  DOWN    │  UP      │  RIGHT   │  "       │
             &kp GRAVE  &kp UNDER  &kp SQT    &kp HOME   &kp END        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DQT
